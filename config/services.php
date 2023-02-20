@@ -31,4 +31,12 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'courier' => [
+        'region' => env('COURIER_REGION', 'us-east-1'),
+        'key' => env('COURIER_ACCESS_KEY_ID'),
+        'secret' => env('COURIER_SECRET_ACCESS_KEY'),
+        'queue_url' => env('COURIER_QUEUE_URL'),
+        'bucket' => env('COURIER_BUCKET')
+    ]
+
 ];
