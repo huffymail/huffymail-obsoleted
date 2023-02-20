@@ -7,7 +7,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     @viteReactRefresh
-    @vite(['resources/js/app.jsx', "resources/js/pages/{$page['component']}.jsx"])
+    @vite('resources/js/app.jsx')
     @inertiaHead
 </head>
 <body>
