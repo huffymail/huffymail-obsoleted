@@ -47,7 +47,7 @@ const InboxForm = () => {
                   name="prefix"
                   component="input"
                   type="text"
-                  className="border-zinc-300 rounded w-full transition-all focus:ring-0 focus:border-zinc-500"
+                  className="border-zinc-300 rounded font-normal w-full transition-all focus:ring-0 focus:border-zinc-500"
                   placeholder="john.doe"
                   required
                 />
@@ -63,7 +63,7 @@ const InboxForm = () => {
                 <Field
                   name="domain"
                   component="select"
-                  className="border-zinc-300 rounded w-full transition-all focus:ring-0 focus:border-zinc-500"
+                  className="border-zinc-300 rounded font-normal w-full transition-all focus:ring-0 focus:border-zinc-500"
                   defaultValue="huffymail.com"
                 >
                   <option value="huffymail.com">huffymail.com</option>
