@@ -13,3 +13,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+
+Route::get('/messages', [\App\Http\Controllers\Api\MessagesController::class, 'index']);
+Route::get('/messages/{slug}', [\App\Http\Controllers\Api\MessagesController::class, 'show']);
