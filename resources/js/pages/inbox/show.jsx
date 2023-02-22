@@ -17,7 +17,7 @@ const Page = ({
         <div className="mx-auto max-w-7xl">
           <div className="px-2">
             <div>
-              <button onClick={onBack} className="text-zinc-500">
+              <button onClick={onBack}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -38,7 +38,7 @@ const Page = ({
         </div>
       </div>
 
-      <div className="">
+      <div>
         <Messages messages={messages} to={to}/>
       </div>
     </Fragment>
@@ -57,7 +57,7 @@ const Messages = ({
   to
 }) => {
   const onClick = (id) => {
-    router.visit(`/inbox/${to}/${id}`)
+    router.visit(`/inbox/${to}/messages/${id}`)
   }
 
   return (

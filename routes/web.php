@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\WelcomeController::class, 'index']);
 
 Route::get('/inbox/{to}', [\App\Http\Controllers\InboxController::class, 'show']);
+
+Route::get('/inbox/{to}/messages/{message_id}', [\App\Http\Controllers\InboxMessageController::class, 'show']);

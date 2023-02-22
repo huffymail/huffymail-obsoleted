@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/messages', [\App\Http\Controllers\Api\MessagesController::class, 'index']);
-Route::get('/messages/{slug}', [\App\Http\Controllers\Api\MessagesController::class, 'show']);
+Route::get('/messages/{message_id}', [\App\Http\Controllers\Api\MessagesController::class, 'show']);

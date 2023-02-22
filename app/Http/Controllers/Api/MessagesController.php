@@ -35,17 +35,17 @@ class MessagesController extends Controller
     public function show(Request $request)
     {
         $params = [
-            'slug' => $request->route('slug'),
+            'message_id' => $request->route('message_id'),
         ];
 
         $validator = Validator::make($params, [
-            'slug' => ['required', 'string', 'size:40'],
+            'message_id' => ['required', 'string', 'min:40'],
         ]);
         if ($validator->fails()) {
             abort(\Symfony\Component\HttpFoundation\Response::HTTP_NOT_FOUND);
         }
 
-        $message = Message::where('message_id', $params['slug'])->first();
+        $message = Message::where('message_id', $params['message_id'])->first();
         if (is_null($message)) {
             abort(\Symfony\Component\HttpFoundation\Response::HTTP_NOT_FOUND);
         }
