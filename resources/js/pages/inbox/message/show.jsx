@@ -35,7 +35,7 @@ const Page = ({ message }) => {
       </div>
 
       <div className="mt-4">
-        <div className="px-2 mx-auto max-w-7xl">
+        <div className="prose px-2 mx-auto max-w-7xl">
           <div dangerouslySetInnerHTML={{ __html: message.html }}/>
         </div>
       </div>
